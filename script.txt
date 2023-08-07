@@ -1,0 +1,20 @@
+ <!-- Link Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Modal Window - Contact Form -->
+  <script>
+    $(document).ready(function() {
+      $("#contactModal").on("shown.bs.modal", function() {
+        $("#name").focus();
+      });
+    });
+  </script>
+
+  <!-- Modal HTML -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="
